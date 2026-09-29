@@ -1,0 +1,484 @@
+/* ページ固有の配置のみ。カード・ボタン・配色はstyle.cssを共用。 */
+
+.portfolio-page main {
+  padding-top: 30px;
+}
+
+.portfolio-page h1 {
+  font-size: clamp(30px,6vw,54px);
+  line-height: 1.5;
+}
+
+.portfolio-hero {
+  padding: 35px 0 28px;
+  margin-bottom: 65px;
+}
+
+.portfolio-hero>.wrap {
+  min-height: 300px;
+}
+
+.portfolio-hero h1:after {
+  content: "";
+  display: block;
+  width: 25px;
+  height: 1px;
+  background: var(--ink);
+  margin: 20px 0;
+}
+
+.portfolio-hero .intro-copy {
+  max-width: 45%;
+}
+
+.portfolio-art {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 51%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.portfolio-art .person {
+  position: absolute;
+  width: 80%;
+  right: 0;
+  bottom: 0;
+}
+
+.portfolio-art .books {
+  position: absolute;
+  width: 33%;
+  left: 0;
+  bottom: 0;
+}
+
+.portfolio-art .vase {
+  position: absolute;
+  width: 26%;
+  left: 22%;
+  bottom: 5%;
+}
+
+.portfolio-art .coffee {
+  position: absolute;
+  width: 22%;
+  right: 0;
+  bottom: 0;
+}
+
+.portfolio-art .aside-note {
+  position: absolute;
+  left: 10%;
+  top: 0;
+  font-size: .9em;
+}
+
+.portfolio-hero .leaf-one {
+  left: 43%;
+  top: 15%;
+}
+
+.portfolio-hero .leaf-two {
+  right: 0;
+  top: 0;
+}
+
+.portfolio-hero .leaf-three {
+  left: 38%;
+  bottom: 10%;
+}
+
+.category-filters {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 35px;
+}
+
+.category-filters .pill {
+  font-size: 14px;
+  padding: 9px 22px;
+  min-width: 100px;
+}
+
+.category-filters [aria-pressed="true"] {
+  background: var(--ink);
+  color: white;
+}
+
+.portfolio-list {
+  padding-bottom: 70px;
+}
+
+.portfolio-list .works-grid {
+  align-items: stretch;
+}
+
+.portfolio-page .work-photo-frame {
+  aspect-ratio: auto;
+}
+
+.portfolio-page .work-photo-frame .work-photo {
+  height: auto;
+  aspect-ratio: auto;
+  object-fit: contain;
+}
+
+.portfolio-page .work-card[hidden] {
+  display: none;
+}
+
+.portfolio-page .work-body {
+  padding-bottom: 44px;
+}
+
+.portfolio-page .work-body h3 {
+  overflow-wrap: anywhere;
+}
+
+.filter-empty {
+  text-align: center;
+  padding: 30px;
+}
+
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 12px;
+  margin: 0 auto 40px;
+  line-height: 1.8;
+}
+
+.breadcrumbs li+li:before {
+  content: "›";
+  margin-right: 8px;
+}
+
+.breadcrumbs a {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+.detail-surface {
+  padding: 30px 0 65px;
+  background: linear-gradient(var(--blue),var(--paper) 70%);
+  margin-bottom: 45px;
+}
+
+.detail-surface:after {
+  display: none;
+}
+
+.work-gallery {
+  position: relative;
+  margin: 0 auto 40px;
+  max-width: 860px;
+}
+
+.gallery-slide {
+  margin: 0;
+}
+
+.gallery-slide[hidden] {
+  display: none;
+}
+
+.gallery-slide img {
+  width: 100%;
+  height: auto;
+  max-height: 850px;
+  object-fit: contain;
+  margin: auto;
+}
+
+.gallery-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  margin-top: 18px;
+}
+
+.gallery-arrow {
+  border: 1px solid #cbd7de;
+  border-radius: 50%;
+  width: 48px;
+  height: 48px;
+  background: #fff;
+  font-size: 30px;
+  line-height: 1;
+}
+
+.gallery-dots {
+  display: flex;
+  gap: 4px;
+}
+
+.gallery-dot {
+  width: 36px;
+  height: 44px;
+  display: grid;
+  place-items: center;
+  padding: 0;
+}
+
+.gallery-dot:before {
+  content: "";
+  width: 11px;
+  height: 11px;
+  background: #cedbe1;
+  border-radius: 50%;
+}
+
+.gallery-dot[aria-current="true"]:before {
+  background: var(--ink);
+}
+
+.detail-copy {
+  max-width: 720px;
+  margin: auto;
+  position: relative;
+}
+
+.detail-copy h1 {
+  font-size: clamp(22px,3.3vw,36px);
+  margin: 15px 0 28px;
+  letter-spacing: .06em;
+  overflow-wrap: anywhere;
+}
+
+.work-metadata {
+  border-left: 1px solid #91aabb;
+  padding-left: 22px;
+  margin-bottom: 30px;
+  font-size: 15px;
+}
+
+.work-metadata>div {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 15px;
+  margin-bottom: 8px;
+}
+
+.work-description {
+  font-size: 16px;
+  line-height: 2;
+  margin-bottom: 32px;
+  overflow-wrap: anywhere;
+}
+
+.detail-copy>.pill {
+  max-width: 410px;
+  margin: 0 auto;
+}
+
+.detail-copy>.leaf {
+  right: -8%;
+  top: 0;
+  width: 8%;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+@media(min-width:1024px) {
+  .portfolio-list .works-grid {
+    grid-template-columns: repeat(3,minmax(0,1fr));
+    gap: 25px;
+  }
+
+  .portfolio-list.wrap {
+    max-width: 1200px;
+  }
+
+  .portfolio-list .work-body {
+    padding: 18px 18px 45px;
+  }
+
+  .portfolio-list .work-body h3 {
+    font-size: 18px;
+  }
+
+  .portfolio-list .work-body p {
+    font-size: 15px;
+  }
+
+  .gallery-arrow {
+    position: absolute;
+    top: 45%;
+    width: 56px;
+    height: 56px;
+  }
+
+  .gallery-prev {
+    left: -28px;
+  }
+
+  .gallery-next {
+    right: -28px;
+  }
+}
+
+@media(max-width:600px) {
+  .portfolio-page main {
+    padding-top: 20px;
+  }
+
+  .portfolio-hero {
+    padding: 24px 0 15px;
+    margin-bottom: 45px;
+  }
+
+  .portfolio-hero>.wrap {
+    min-height: 245px;
+  }
+
+  .portfolio-hero .intro-copy {
+    max-width: 64%;
+    font-size: 12px;
+  }
+
+  .portfolio-art {
+    height: 155px;
+    width: 58%;
+    right: -2%;
+    bottom: -7px;
+  }
+
+  .portfolio-art .aside-note {
+    font-size: 9px;
+    left: 20%;
+    top: -15px;
+  }
+
+  .portfolio-art .person {
+    width: 85%;
+  }
+
+  .portfolio-hero .leaf-one {
+    left: 72%;
+    top: 1%;
+  }
+
+  .portfolio-hero .leaf-three {
+    left: 33%;
+    bottom: 3%;
+  }
+
+  .portfolio-hero .leaf-two {
+    right: 1%;
+    top: 15%;
+  }
+
+  .category-filters {
+    gap: 8px;
+    margin-bottom: 24px;
+  }
+
+  .category-filters .pill {
+    font-size: 11px;
+    padding: 8px 11px;
+    min-width: 0;
+    flex: 0 1 calc(33.333% - 6px);
+  }
+
+  .portfolio-list .work-body p {
+    font-size: 11px;
+  }
+
+  .portfolio-list .work-body h3 {
+    font-size: 12px;
+  }
+
+  .portfolio-list .tag {
+    font-size: 10px;
+  }
+
+  .portfolio-list .work-body {
+    padding-bottom: 35px;
+  }
+
+  .breadcrumbs {
+    font-size: 10px;
+    gap: 5px;
+    margin-bottom: 32px;
+  }
+
+  .detail-surface {
+    padding-top: 12px;
+  }
+
+  .work-gallery {
+    margin-bottom: 25px;
+  }
+
+  .gallery-controls {
+    gap: 8px;
+    margin-top: 8px;
+  }
+
+  .gallery-arrow {
+    width: 44px;
+    height: 44px;
+  }
+
+  .work-metadata {
+    padding-left: 14px;
+    font-size: 12px;
+  }
+
+  .work-metadata>div {
+    grid-template-columns: 65px 1fr;
+    gap: 10px;
+  }
+
+  .work-description {
+    font-size: 13px;
+  }
+
+  .detail-copy>.pill {
+    font-size: 12px;
+    padding-inline: 12px;
+  }
+
+  .detail-copy>.leaf {
+    right: -4%;
+    width: 9%;
+  }
+}
+
+/* 詳細ページの一覧へ戻るボタン。 */
+
+@media(hover:hover) and (pointer:fine) {
+  .detail-copy>.pill:hover {
+    background: var(--ink);
+    color: #fff;
+  }
+}
+
+/* リスト標準の左インデントを除去し、上にはみ出す波との間隔を確保。 */
+
+.breadcrumbs {
+  padding: 0;
+  list-style: none;
+  justify-content: flex-start;
+  text-align: left;
+  margin-bottom: 64px;
+}
+
+@media(max-width:600px) {
+  .breadcrumbs {
+    margin-bottom: 56px;
+  }
+}

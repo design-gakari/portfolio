@@ -1,0 +1,51 @@
+/* トップの登場演出：コピーの線 → 仕事場のイラスト。既存のレイアウトは変更しない。 */
+
+.hero-emphasis {
+  position: relative;
+  display: inline-block;
+}
+
+.hero-emphasis::after {
+  content: "";
+  position: absolute;
+  left: .03em;
+  right: .03em;
+  bottom: -.025em;
+  height: .07em;
+  border-radius: 60% 35% 50% 40%;
+  background: #eea055;
+  pointer-events: none;
+  opacity: 0;
+  transform: scaleX(0) rotate(-1deg);
+  transform-origin: left center;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .hero.intro-copy-playing .hero-emphasis::after {
+    animation: hero-pencil-line 1.7s ease-out .2s both;
+  }
+
+  .hero.intro-art-pending .hero-art > img,
+
+  .hero.intro-art-pending > .hero-leaf {
+    opacity: 0;
+  }
+}
+
+@keyframes hero-pencil-line {
+  0% {
+    opacity: 1;
+    transform: scaleX(0) rotate(-1deg);
+  }
+
+  30%,
+   72% {
+    opacity: 1;
+    transform: scaleX(1) rotate(-1deg);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scaleX(1) rotate(-1deg);
+  }
+}

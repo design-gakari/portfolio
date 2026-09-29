@@ -1,0 +1,65 @@
+/* 次のセクション上端の背景。独立した帯や装飾要素は置かない。 */
+
+.section-boundary {
+  --boundary-rise: clamp(12px, 1.8vw, 24px);
+  margin-top: clamp(96px, 12vw, 144px);
+  padding-top: clamp(48px, 6vw, 72px);
+  isolation: isolate;
+}
+
+.section-boundary::before,
+
+.section-boundary::after {
+  content: "";
+  position: absolute;
+  left: calc((100% - 100vw) / 2);
+  width: 100vw;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.section-boundary::before {
+  top: calc(-1 * var(--boundary-rise));
+  height: var(--boundary-rise);
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1440 24' preserveAspectRatio='none'%3E%3Cpath fill='%23f0f7f8' d='M0 24 Q720 -24 1440 24 V24 H0 Z'/%3E%3C/svg%3E") center / 100% 100% no-repeat;
+}
+
+.section-boundary::after {
+  top: 0;
+  height: clamp(36px, 4vw, 48px);
+  background: linear-gradient(to bottom, #f0f7f8, #fff);
+}
+
+/* フッター手前は、共通の棒付き吹き出しと小さなマグカップのみ。 */
+
+.closing.closing-invitation {
+  height: auto;
+  min-height: 160px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: clamp(28px, 4vw, 48px);
+  padding: clamp(42px, 6vw, 64px) 2%;
+}
+
+.closing-invitation > .aside-note {
+  position: relative;
+  flex: 0 1 auto;
+  width: auto;
+  margin: 0;
+  font-size: clamp(12px, 2.65vw, 19px);
+  transform: rotate(-6deg);
+}
+
+.closing-invitation > .closing-mugs {
+  width: clamp(88px, 18vw, 170px);
+  flex: 0 0 auto;
+  align-self: center;
+}
+
+@media (max-width: 600px) {
+  .closing-invitation > .aside-note {
+    font-size: 11px;
+    letter-spacing: .04em;
+  }
+}

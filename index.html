@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="となりのデザイン係。ホームページ、チラシ、名刺、LINEやSNSまわりのこと。ちょっとしたことから、一緒に考えます。">
+    <title>となりのデザイン係</title>
+    <link rel="icon" href="assets/myicon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <link rel="stylesheet" href="hero-intro.css">
+    <link rel="stylesheet" href="home-refinement.css">
+    <script src="hero-intro.js" defer></script>
+    <header class="header wrap" id="top">
+      <a class="brand" href="index.html#top">となりのデザイン係</a>
+      <nav class="desktop-navigation" aria-label="PCメインメニュー">
+        <a href="works.html">作ったもの</a>
+        <a href="index.html#service">できること</a>
+        <a href="index.html#about">私について</a>
+        <a class="header-contact" href="index.html#contact"><svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="2" y="4" width="20" height="16" rx="1.5"/><path d="m3 5 9 8 9-8"/></svg><span>お問い合わせ</span></a>
+      </nav>
+      <button class="menu-toggle" aria-label="メニューを開く" aria-expanded="false" aria-controls="navigation"><span></span><span></span><span></span></button>
+      <nav id="navigation" aria-label="メインメニュー" hidden>
+        <a href="works.html">作ったもの</a>
+        <a href="index.html#service">できること</a>
+        <a href="index.html#about">私について</a>
+        <a href="index.html#contact">お問い合わせ</a>
+        <div class="menu-socials" role="group" aria-label="SNS">
+          <button class="social-icon" type="button" aria-label="X" aria-disabled="true">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.9 2H22l-6.8 7.8L23.2 22H17l-4.9-7.4L5.6 22H2.4l7.3-8.5L.8 2h6.4l4.5 6.7L18.9 2Zm-1.1 18h1.7L6.2 3.9H4.4L17.8 20Z"/></svg>
+        </button>
+          <button class="social-icon" type="button" aria-label="Instagram" aria-disabled="true">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </button>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <!-- ファーストビュー -->
+      <section class="hero wrap" aria-labelledby="hero-title">
+        <h1 id="hero-title">Webとデザインで<br>「<span class="hero-emphasis">伝える</span>」を<br>一緒に作ります。</h1>
+        <p class="hero-copy">ホームページ、チラシ、名刺、<br>LINEやSNSまわりのこと。<br>ちょっとしたことから、<br>一緒に考えます。</p>
+        <div class="hero-art" aria-hidden="true">
+          <img class="hero-books" src="assets/books.png" alt="">
+          <img class="hero-vase" src="assets/vase.png" alt="">
+          <img class="hero-person" src="assets/pcandme.png" alt="">
+          <img class="hero-coffee" src="assets/coffee.png" alt="">
+        </div>
+        <img class="leaf hero-leaf" src="assets/leaf.png" alt="">
+      </section>
+      <!-- 制作実績（カードの本文はworks-data.json） -->
+      <section class="works wave-section" id="works" aria-labelledby="works-title">
+        <div class="wrap">
+          <div class="section-intro">
+            <p class="eyebrow">WORKS</p>
+            <h2 id="works-title">作ったもの</h2>
+            <p>これまでに作ったものを、<br>一部ご紹介します。</p>
+          </div>
+          <div class="works-grid">
+            <a class="work-card" href="work-wedding-menu.html">
+              <span class="work-photo-frame"><img class="work-photo" src="assets/2026weddingmenu.jpg" alt="結婚式 メニュー表" width="1080" height="1350" loading="lazy"></span>
+              <div class="work-body">
+                <span class="tag">ペーパーアイテム</span>
+                <h3>結婚式 メニュー表</h3>
+                <p>鮮やかな色と和のモチーフで、<br>特別な一日を彩るメニュー表を<br>作成しました。</p>
+                <span class="card-link" aria-hidden="true">→</span>
+              </div>
+            </a>
+            <a class="work-card" href="work-piano-concert.html">
+              <span class="work-photo-frame"><img class="work-photo" src="assets/2022piano.jpg" alt="ピアノコンサート チラシ" width="1080" height="1350" loading="lazy"></span>
+              <div class="work-body">
+                <span class="tag">イベント</span>
+                <h3>ピアノコンサート チラシ</h3>
+                <p>出演者の写真と緑を基調に、<br>ピアノコンサートのチラシを<br>制作しました。</p>
+                <span class="card-link" aria-hidden="true">→</span>
+              </div>
+            </a>
+            <a class="work-card" href="work-illustrator-website.html">
+              <span class="work-photo-frame"><img class="work-photo" src="assets/2025web1.jpg" alt="イラストレーター Webサイト" width="1080" height="1350" loading="lazy"></span>
+              <div class="work-body">
+                <span class="tag">Webサイト</span>
+                <h3>イラストレーター Webサイト</h3>
+                <p>イラストの世界観が伝わる、<br>作品を主役にしたWebサイトを<br>制作しました。</p>
+                <span class="card-link" aria-hidden="true">→</span>
+              </div>
+            </a>
+            <a class="work-card" href="work-concert-program-2025.html">
+              <span class="work-photo-frame"><img class="work-photo" src="assets/2025program.jpg" alt="演奏会プログラム" width="1080" height="1350" loading="lazy"></span>
+              <div class="work-body">
+                <span class="tag">グラフィック</span>
+                <h3>演奏会プログラム</h3>
+                <p>演奏会の楽しさが伝わる表紙と、<br>出演者・曲目を読みやすくまとめた<br>プログラムを制作しました。</p>
+                <span class="card-link" aria-hidden="true">→</span>
+              </div>
+            </a>
+          </div>
+          <a class="pill section-button" href="works.html">作ったものをもっと見る <span>→</span></a>
+        </div>
+      </section>
+      <!-- サービス -->
+      <section class="service wave-section" id="service" aria-labelledby="service-title">
+        <div class="wrap">
+          <div class="section-intro">
+            <p class="eyebrow">SERVICE</p>
+            <h2 id="service-title">できること</h2>
+            <p>Webとデザインで、<br>伝えたい想いがちゃんと届くように<br>お手伝いします。</p>
+          </div>
+          <div class="service-grid">
+            <article class="service-card">
+              <img src="assets/pc.png" alt="" loading="lazy">
+              <h3>Webサイト制作・運用</h3>
+              <p>ホームページの新規制作から<br>更新・運用まで、目的に合わせて<br>ご提案します。</p>
+            </article>
+            <article class="service-card">
+              <img src="assets/paperitem.png" alt="" loading="lazy">
+              <h3>チラシ・名刺などのデザイン</h3>
+              <p>イベントのチラシや名刺、<br>メニュー表など、紙もののデザイン<br>を制作します。</p>
+            </article>
+            <article class="service-card">
+              <img src="assets/designdata.png" alt="" loading="lazy">
+              <h3>編集可能なデータ作成</h3>
+              <p>PowerPointやCanvaで編集できる<br>データをお渡しします。<br>今後の運用も安心です。</p>
+            </article>
+            <article class="service-card">
+              <img src="assets/sp_line.png" alt="" loading="lazy">
+              <h3>SNS・LINEまわりのサポート</h3>
+              <p>公式LINEの開設や、SNSの<br>基本的な運用サポートなど、<br>気軽にご相談ください。</p>
+            </article>
+            <article class="service-card">
+              <img src="assets/note_pen.png" alt="" loading="lazy">
+              <h3>資料作成・データ整理</h3>
+              <p>社内資料や案内資料、<br>データの整理・作成など、<br>ちょっとした作業もお手伝いします。</p>
+            </article>
+            <article class="service-card">
+              <img src="assets/chat.png" alt="" loading="lazy">
+              <h3>相談・アドバイスのみもOK</h3>
+              <p>「何から始めればいい？」<br>「こんなことできる？」など、<br>相談だけでもお気軽にどうぞ。</p>
+            </article>
+          </div>
+          <button class="pill section-button" data-link="service">詳しく見る <span>→</span></button>
+        </div>
+      </section>
+      <section class="about wrap section-boundary" id="about" aria-labelledby="about-title">
+        <div class="about-intro">
+          <p class="eyebrow">ABOUT</p>
+          <h2 id="about-title">私について</h2>
+          <p>はじめまして。<br>となりのデザイン係の<br>やまだ はなこです。</p>
+          <p class="aside-note">デザインのこと、<br>気軽に話してください。</p>
+          <img class="about-person" src="assets/talkwithme.png" alt="" loading="lazy">
+          <img class="leaf leaf-one" src="assets/leaf.png" alt="">
+        </div>
+        <div class="bio soft-panel">
+          <h3 class="small-heading">こんな人です</h3>
+          <p>Webサイトやチラシなどのデザインを作ったり、<br>「これ、どうしたら伝わるかな？」を一緒に考えたりしています。<br>専門用語を並べるよりも、話をしっかり聞いて、<br>その人に合った方法を一緒に見つけることを大切にしています。</p>
+          <img src="assets/vase.png" alt="" loading="lazy">
+        </div>
+        <div class="history">
+          <h3 class="small-heading">これまでのこと</h3>
+          <dl class="timeline">
+            <div>
+              <dt>〜20代前半</dt>
+              <dd>HTMLコーダーとして制作会社に勤務</dd>
+            </div>
+            <div>
+              <dt>20代</dt>
+              <dd>Webデザイナー（アシスタント）・コーダーとして経験を積む</dd>
+            </div>
+            <div>
+              <dt>出産後</dt>
+              <dd>育児と向き合うため退職し、現在は自宅で制作活動中</dd>
+            </div>
+            <div>
+              <dt>これから</dt>
+              <dd>地域の個人事業主さんや小さな団体の<br>「伝える」をお手伝いしていきたいです</dd>
+            </div>
+          </dl>
+          <aside>
+            <img src="assets/books_pen.png" alt="" loading="lazy">
+            <p class="aside-note">経験を活かして<br>お役に立てることを<br>探しています。</p>
+          </aside>
+        </div>
+        <div class="values">
+          <h3 class="small-heading">大切にしていること</h3>
+          <ul>
+            <li><span><img src="assets/chat.png" alt="" loading="lazy"></span>話を聞く<br>ことから始める</li>
+            <li><span><img src="assets/lightbulb.png" alt="" loading="lazy"></span>一緒に考える<br>押しつけない</li>
+            <li><span><img src="assets/sprout.png" alt="" loading="lazy"></span>こつこつ<br>丁寧に</li>
+            <li><span><img src="assets/house.png" alt="" loading="lazy"></span>生活と仕事を<br>大切に</li>
+          </ul>
+        </div>
+      </section>
+      <section class="contact wrap section-boundary" id="contact" aria-labelledby="contact-title">
+        <div class="contact-intro">
+          <p class="eyebrow">CONTACT</p>
+          <h2 id="contact-title">お問い合わせ</h2>
+          <p>ちょっとしたことからでも<br>お気軽にご連絡ください。<br>一緒に、いい方法を見つけましょう。</p>
+          <img class="contact-person" src="assets/pcandme.png" alt="" loading="lazy">
+          <img class="contact-vase" src="assets/vase.png" alt="" loading="lazy">
+          <img class="leaf leaf-one" src="assets/leaf.png" alt="">
+        </div>
+        <div class="questions soft-panel">
+          <h3 class="small-heading">こんなご相談をいただいています</h3>
+          <ul>
+            <li>ホームページって<br>必要ですか？</li>
+            <li>このチラシ、<br>もうちょっと見やすく<br>できますか？</li>
+            <li>公式LINEを作りたいけど<br>何から始めればいい？</li>
+            <li>まだ内容が決まってないけど<br>相談してもいいですか？</li>
+          </ul>
+        </div>
+        <div class="contact-methods" id="contact-methods">
+          <h3 class="small-heading">ご連絡方法</h3>
+          <div class="contact-grid">
+            <a class="contact-card" href="#" data-link="line">
+              <img src="assets/icon_line.png" alt="" loading="lazy">
+              <h3>LINEで相談する</h3>
+              <p>日中は育児の合間に<br>確認しています。<br>気軽にメッセージをどうぞ。</p>
+              <span class="pill">LINEで連絡する <span>→</span></span>
+            </a>
+            <a class="contact-card" href="#" data-link="form">
+              <img src="assets/icon_mail.png" alt="" loading="lazy">
+              <h3>フォームから送る</h3>
+              <p>2〜3日以内に<br>ご返信いたします。<br>お気軽にご連絡ください。</p>
+              <span class="pill">お問い合わせフォーム <span>→</span></span>
+            </a>
+          </div>
+        </div>
+        <div class="notice soft-panel">
+          <h3 class="small-heading">ご確認ください</h3>
+          <div>
+            <img src="assets/checklists.png" alt="" loading="lazy">
+            <ul>
+              <li>子育て中のため、短納期のご依頼はお受けしていません。</li>
+              <li>丸投げは苦手です。相談しながら一緒に作るスタイルです。</li>
+              <li>内容やスケジュールによってはお受けできない場合があります。</li>
+              <li>まずはご相談いただき、できる範囲でご提案します。</li>
+            </ul>
+          </div>
+          <img class="leaf leaf-two" src="assets/leaf.png" alt="">
+        </div>
+        <div class="closing closing-invitation">
+          <p class="aside-note">その「ちょっと困った」、<br>聞かせてください。</p>
+          <img class="closing-mugs" src="assets/conversation-mugs.png" alt="" loading="lazy">
+        </div>
+      </section>
+    </main>
+    <footer class="footer wrap">
+      <a class="brand" href="index.html#top">となりのデザイン係</a>
+      <div class="footer-links">
+        <nav aria-label="フッターメニュー">
+          <a href="works.html">作ったもの</a>
+          <a href="index.html#service">できること</a>
+          <a href="index.html#about">私について</a>
+          <a class="footer-contact-pc" href="index.html#contact">お問い合わせ</a>
+        </nav>
+        <nav aria-label="SNS">
+          <button data-link="x">X（外部リンク）↗</button>
+          <button data-link="instagram">Instagram（外部リンク）↗</button>
+          <button data-link="litlink">リットリンク（外部リンク）↗</button>
+        </nav>
+      </div>
+      <p class="copyright">© となりのデザイン係</p>
+    </footer>
+    <dialog id="link-notice">
+      <p>このリンクは現在準備中です。</p>
+      <button class="pill" id="close-notice">閉じる</button>
+    </dialog>
+  </body>
+</html>

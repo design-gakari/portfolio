@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 750 60" preserveAspectRatio="none">
+  <g>
+    <path fill="#f0f7f8" d="M-750 30 C-625 0 -500 0 -375 30 C-250 60 -125 60 0 30 C125 0 250 0 375 30 C500 60 625 60 750 30 C875 0 1000 0 1125 30 C1250 60 1375 60 1500 30 V60 H-750 Z"/>
+    <animateTransform attributeName="transform" type="translate" from="0 0" to="750 0" dur="8s" repeatCount="indefinite"/>
+  </g>
+</svg>
