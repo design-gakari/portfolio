@@ -713,6 +713,8 @@ h2+p {
 }
 
 .contact-grid .contact-card {
+  display: flex;
+  flex-direction: column;
   text-align: center;
   padding: 22px 13px 19px;
 }
@@ -737,6 +739,7 @@ h2+p {
 }
 
 .contact-grid .pill {
+  margin-top: auto;
   width: 100%;
   padding: 7px 7px;
   font-size: .9em;
@@ -837,7 +840,10 @@ h2+p {
   padding-left: 30px;
 }
 
-.footer-links button {
+.footer-links nav>a,
+.footer-links nav>button {
+  display: flex;
+  align-items: center;
   text-align: left;
   padding: 0;
   min-height: 32px;
@@ -934,12 +940,12 @@ dialog .pill {
   }
 
   .work-body h3 {
-    font-size: 11px;
+    font-size: 12px;
     letter-spacing: .025em;
   }
 
   .work-body p {
-    font-size: 10px;
+    font-size: 12px;
     letter-spacing: .015em;
   }
 
@@ -949,7 +955,7 @@ dialog .pill {
   }
 
   .tag {
-    font-size: 9px;
+    font-size: 12px;
     padding: 2px 6px;
   }
 
@@ -964,7 +970,7 @@ dialog .pill {
   .section-button {
     width: 65%;
     margin-top: 22px;
-    font-size: 11px;
+    font-size: 12px;
     min-height: 38px;
     padding: 7px 10px;
   }
@@ -986,7 +992,7 @@ dialog .pill {
   }
 
   .service-card h3 {
-    font-size: 11px;
+    font-size: 12px;
     letter-spacing: 0;
   }
 
@@ -996,7 +1002,7 @@ dialog .pill {
   }
 
   .service-card p {
-    font-size: 10px;
+    font-size: 12px;
     line-height: 1.85;
   }
 
@@ -1010,7 +1016,7 @@ dialog .pill {
   }
 
   .interlude .aside-note {
-    font-size: 11px;
+    font-size: 12px;
   }
 
   .about-intro {
@@ -1018,7 +1024,7 @@ dialog .pill {
   }
 
   .about-intro>.aside-note {
-    font-size: 10px;
+    font-size: 12px;
     left: 9%;
     bottom: 18px;
   }
@@ -1028,7 +1034,7 @@ dialog .pill {
   }
 
   .bio p {
-    font-size: 9px;
+    font-size: 12px;
     line-height: 1.9;
   }
 
@@ -1046,7 +1052,7 @@ dialog .pill {
   }
 
   .timeline {
-    font-size: 9px;
+    font-size: 12px;
     width: 78%;
   }
 
@@ -1058,7 +1064,7 @@ dialog .pill {
   }
 
   .history aside p {
-    font-size: 9px;
+    font-size: 12px;
   }
 
   .history aside {
@@ -1082,7 +1088,7 @@ dialog .pill {
 
   .values ul {
     gap: 8px;
-    font-size: 9px;
+    font-size: 12px;
   }
 
   .values li span {
@@ -1106,7 +1112,7 @@ dialog .pill {
   }
 
   .together .wrap>p {
-    font-size: 10px;
+    font-size: 12px;
     line-height: 2;
   }
 
@@ -1116,7 +1122,7 @@ dialog .pill {
   }
 
   .bubble {
-    font-size: 8px;
+    font-size: 12px;
     padding: 14px 5px;
   }
 
@@ -1125,12 +1131,12 @@ dialog .pill {
   }
 
   .contact-intro .aside-note {
-    font-size: 11px;
+    font-size: 12px;
     top: -15px;
   }
 
   .contact-intro>p:not(.eyebrow):not(.aside-note) {
-    font-size: 11px;
+    font-size: 12px;
   }
 
   .questions {
@@ -1143,7 +1149,7 @@ dialog .pill {
   }
 
   .questions li {
-    font-size: 10px;
+    font-size: 12px;
     padding: 10px 3px;
     min-height: 59px;
   }
@@ -1166,12 +1172,12 @@ dialog .pill {
   }
 
   .contact-grid p {
-    font-size: 11px;
+    font-size: 12px;
   }
 
   .contact-grid .pill {
-    font-size: 9px;
-    min-height: 36px;
+    font-size: 12px;
+    min-height: 58px;
     padding-inline: 4px;
     gap: 5px;
   }
@@ -1186,7 +1192,7 @@ dialog .pill {
   }
 
   .notice ul {
-    font-size: 9px;
+    font-size: 12px;
     letter-spacing: 0;
   }
 
@@ -1215,7 +1221,7 @@ dialog .pill {
 
   .footer-links {
     margin: 25px 8% 37px;
-    font-size: 10px;
+    font-size: 12px;
     gap: 18px;
   }
 
@@ -1228,7 +1234,7 @@ dialog .pill {
   }
 
   .copyright {
-    font-size: 9px;
+    font-size: 12px;
   }
 }
 
@@ -2033,17 +2039,7 @@ html {
   }
 }
 
-/* PCフッターの連絡先とリンクのホバー表示。 */
-
-.footer-contact-pc {
-  display: none;
-}
-
-@media(min-width:1024px) {
-  .footer-contact-pc {
-    display: block;
-  }
-}
+/* PCフッターのリンクのホバー表示。 */
 
 @media(min-width:1024px) and (hover:hover) and (pointer:fine) {
   .footer-links a:hover,
@@ -2143,7 +2139,7 @@ html {
   .questions li {
     min-height: 59px;
     padding: 11px 6px;
-    font-size: 10px;
+    font-size: 12px;
     line-height: 1.8;
   }
 
@@ -2226,5 +2222,14 @@ html {
 @media(max-width:600px) {
   .header.wrap {
     min-height: 64px;
+  }
+}
+
+/* スマートフォンの補助テキストも12px以上で表示。 */
+@media(max-width:600px) {
+  .eyebrow,
+  .footer .brand,
+  .service .section-intro>p:not(.eyebrow):not(.aside-note) {
+    font-size: 12px;
   }
 }
