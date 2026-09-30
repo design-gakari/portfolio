@@ -59,7 +59,7 @@
 
 @media (max-width: 600px) {
   .closing-invitation > .aside-note {
-    font-size: 12px;
+    font-size: 11px;
     letter-spacing: .04em;
   }
 }

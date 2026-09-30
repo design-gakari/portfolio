@@ -1,18 +1,16 @@
-// SNSは各サービスのトップを仮設定。アカウントURLへ変更するとフッターとメニューに反映されます。
-// その他の空文字も、公開先が決まり次第URLを設定してください。
+// 公開先のURLが決まり次第、空文字を実際のURLに変更してください。
 const links = {
   works: 'works.html',
-  service: '',
   workMenu: 'work-wedding-menu.html',
   workConcert: 'work-piano-concert.html',
   workWebsite: 'work-illustrator-website.html',
   workProgram: 'work-concert-program-2025.html',
-  line: '',
-  form: '',
-  x: 'https://x.com/',
-  instagram: 'https://www.instagram.com/',
-  litlink: 'https://lit.link/',
-  foriio: 'https://www.foriio.com/'
+  line: 'https://line.me/R/ti/p/@433wdmnz',
+  form: 'https://docs.google.com/forms/d/e/1FAIpQLSexMPU98dK45HId_BtcLXrlC-qlqApLfB_wQa4KhtuoRJ4Dpg/viewform?usp=dialog',
+  x: 'https://x.com/design_gakari',
+  instagram: 'https://www.instagram.com/design_gakari/',
+  litlink: 'https://lit.link/design_gakari',
+  foriio: 'https://fori.io/design-gakari'
 };
 
 // ── 全画面メニューとキーボード操作 ──

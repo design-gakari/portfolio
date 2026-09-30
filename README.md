@@ -73,9 +73,3 @@ CSS・JavaScriptは直接編集します。これらはbuild.pyで上書きさ�
 ## GitHub Pages
 
 このフォルダの内容をリポジトリへ配置し、GitHub Pagesの公開元に指定します。すべて相対パスなので、リポジトリ名を含むURLでも使用できます。`.nojekyll` も含めてください。GitHubへのアップロードや公開操作は別途必要です。
-
-## 公開URLとOGP
-
-全ページに既存の `assets/myicon.png` を使うOGPを出力します。公開URLが未定のため、現在は画像の相対パスを設定しています。SNSでの表示を有効にするには、`site-config.json` の `url` に公開先のサイトURL（サブフォルダを含む）を入力し、`python -B build.py` を実行してください。画像URLと各ページのOGP URLが絶対URLになります。
-
-foriioのURLは `script.js` 冒頭の `links.foriio` に設定してください。現在は各サービスのトップページを仮設定しています。X・InstagramのURLはフッターとスマホメニューで共通です。
