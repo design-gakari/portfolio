@@ -1638,7 +1638,7 @@ main {
   }
 }
 
-/* メニュー内SNS：リンク先は未設定 */
+/* メニュー内SNS */
 
 .menu-socials {
   display: flex;
@@ -1656,10 +1656,11 @@ main {
   height: 48px;
   padding: 10px;
   color: var(--ink);
-  cursor: default;
+  cursor: pointer;
 }
 
-.social-icon svg {
+.social-icon img {
+  object-fit: contain;
   display: block;
   width: 27px;
   height: 27px;

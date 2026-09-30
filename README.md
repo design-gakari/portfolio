@@ -1,1 +1,81 @@
-# portfolio
+# となりのデザイン係 — 編集ガイド
+
+HTML / CSS / JavaScriptで構成された静的サイトです。生成済みのHTMLはブラウザで直接開けます。GitHub Pagesへの配信時にPythonやnpmは不要です。
+
+## よく編集する場所
+
+| 編集内容 | ファイル |
+| --- | --- |
+| ヘッダー・メニュー | `templates/header.html` |
+| フッター | `templates/footer.html` |
+| トップページの本文・構成 | `templates/home.html` |
+| 制作物カードの共通構造 | `templates/card.html` |
+| 一覧ページの構成 | `templates/works.html` |
+| 詳細ページの構成 | `templates/detail.html` |
+| 一覧・詳細の共通HTML枠 | `templates/page.html` |
+| スライダーの操作部 | `templates/gallery-controls.html` |
+| 制作物の本文・画像・カテゴリー・詳細 | `works-data.json` |
+| 基本デザイン・共通パーツ・レスポンシブ | `style.css` |
+| 一覧・詳細ページのレイアウト | `portfolio.css` |
+| トップの登場演出 | `hero-intro.css` / `hero-intro.js` |
+| トップのセクション境界・末尾の案内 | `home-refinement.css` |
+| メニュー・リンク・ヘッダー・カード表示 | `script.js` |
+| カテゴリー絞り込み・手動スライダー | `portfolio.js` |
+
+`assets/` は提供画像と既存の波背景です。原画像を加工せず使用しています。トップの実績画像はCSSで正方形に表示し、一覧・詳細では画像全体を表示します。
+
+## 編集と再生成
+
+1. 上の表にあるテンプレートやデータをテキストエディタで編集します。
+2. このフォルダで次を実行します。
+
+```sh
+python build.py
+```
+
+トップ・一覧・12件の詳細HTMLが生成され、インデントも自動で整います。Python標準ライブラリのみを使用します。HTMLの整形補助は `html_format.py` にあります。
+
+詳細ページだけを更新する場合：
+
+```sh
+python build.py --details-only
+```
+
+`index.html`、`works.html`、`work-*.html` を直接編集することもできます。ただし、再生成するとテンプレートとデータの内容で上書きされます。継続して残したい修正は生成元にも反映してください。
+
+CSS・JavaScriptは直接編集します。これらはbuild.pyで上書きされません。
+
+## コードの書式
+
+- UTF-8、LF、ファイル末尾に改行。
+- HTML / CSS / JavaScript / JSONはスペース2個、Pythonは4個を基準にしています。
+- `.editorconfig` 対応エディタでは書式設定が適用されます。
+- HTMLの見出しや文章内の `span` / `br` は、空白や改行位置が表示に影響するため、必要に応じて1行に保っています。
+- CSSのメディアクエリは適用順に意味があります。単純に並べ替えず、該当箇所を編集してください。
+- 元の流体シェイプを表すSVGはCSSのURL内に残しています。これは既存デザインの定義で、長い行でもそのまま使用できます。
+
+## 現在の表示・操作
+
+- PCは横並びナビ、1024px未満は全画面メニュー。
+- ヘッダーは追従し、スクロール時は背景のみ不透明度0.7。
+- トップの登場演出、制作物・サービスカードの表示演出、波・ホバー効果を実装。
+- 一覧は6カテゴリーで絞り込み。SPは2列、PCは3列。
+- 詳細は複数画像の場合だけ手動スライダーを表示。自動再生なし。
+- 動きを減らす設定には `prefers-reduced-motion` で対応。
+- Google FontsのZen Maru Gothicをオンラインで読み込みます。
+
+## 公開前に確認する情報
+
+- LINE・フォーム・SNSなど未設定の外部リンクは、`script.js` 冒頭の `links` で設定してください。未設定時は準備中の案内が表示されます。
+- 詳細ページの制作年・制作範囲・説明文には、画像とファイル名から推定した編集用原稿が含まれます。
+- 氏名などのプロフィール本文も、公開前に実際の情報を確認してください。
+
+## GitHub Pages
+
+このフォルダの内容をリポジトリへ配置し、GitHub Pagesの公開元に指定します。すべて相対パスなので、リポジトリ名を含むURLでも使用できます。`.nojekyll` も含めてください。GitHubへのアップロードや公開操作は別途必要です。
+
+## 公開URLとOGP
+
+全ページに既存の `assets/myicon.png` を使うOGPを出力します。公開URLが未定のため、現在は画像の相対パスを設定しています。SNSでの表示を有効にするには、`site-config.json` の `url` に公開先のサイトURL（サブフォルダを含む）を入力し、`python -B build.py` を実行してください。画像URLと各ページのOGP URLが絶対URLになります。
+
+foriioのURLは `script.js` 冒頭の `links.foriio` に設定してください。現在は各サービスのトップページを仮設定しています。X・InstagramのURLはフッターとスマホメニューで共通です。

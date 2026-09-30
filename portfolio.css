@@ -357,7 +357,7 @@
   }
 
   .portfolio-art .aside-note {
-    font-size: 9px;
+    font-size: 12px;
     left: 20%;
     top: -15px;
   }
@@ -387,14 +387,14 @@
   }
 
   .category-filters .pill {
-    font-size: 11px;
+    font-size: 12px;
     padding: 8px 11px;
     min-width: 0;
     flex: 0 1 calc(33.333% - 6px);
   }
 
   .portfolio-list .work-body p {
-    font-size: 11px;
+    font-size: 12px;
   }
 
   .portfolio-list .work-body h3 {
@@ -402,7 +402,7 @@
   }
 
   .portfolio-list .tag {
-    font-size: 10px;
+    font-size: 12px;
   }
 
   .portfolio-list .work-body {
@@ -410,7 +410,7 @@
   }
 
   .breadcrumbs {
-    font-size: 10px;
+    font-size: 12px;
     gap: 5px;
     margin-bottom: 32px;
   }

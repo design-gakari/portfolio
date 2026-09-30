@@ -39,12 +39,12 @@
         <a href="index.html#about">私について</a>
         <a href="index.html#contact">お問い合わせ</a>
         <div class="menu-socials" role="group" aria-label="SNS">
-          <button class="social-icon" type="button" aria-label="X" aria-disabled="true">
-          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path fill="currentColor" d="M18.9 2H22l-6.8 7.8L23.2 22H17l-4.9-7.4L5.6 22H2.4l7.3-8.5L.8 2h6.4l4.5 6.7L18.9 2Zm-1.1 18h1.7L6.2 3.9H4.4L17.8 20Z"/></svg>
-        </button>
-          <button class="social-icon" type="button" aria-label="Instagram" aria-disabled="true">
-          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.6" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
-        </button>
+          <button class="social-icon" type="button" aria-label="X" data-link="x">
+        <img src="assets/icon_x.svg" alt="" width="27" height="27">
+      </button>
+          <button class="social-icon" type="button" aria-label="Instagram" data-link="instagram">
+        <img src="assets/icon_instagram.svg" alt="" width="27" height="27">
+      </button>
         </div>
       </nav>
     </header>
@@ -67,13 +67,13 @@
           <div class="section-intro">
             <p class="eyebrow">WORKS</p>
             <h2 id="works-title">作ったもの</h2>
-            <p>これまでに作ったものを、一部ご紹介します。</p>
+            <p>これまでに作ったものを、<br>一部ご紹介します。</p>
           </div>
           <div class="works-grid">
             <a class="work-card" href="work-wedding-menu.html">
               <span class="work-photo-frame"><img class="work-photo" src="assets/2026weddingmenu.jpg" alt="結婚式 メニュー表" width="1080" height="1350" loading="lazy"></span>
               <div class="work-body">
-                <span class="tag">その他</span>
+                <span class="tag">ペーパーアイテム</span>
                 <h3>結婚式 メニュー表</h3>
                 <p>鮮やかな色と和のモチーフで、<br>特別な一日を彩るメニュー表を<br>作成しました。</p>
                 <span class="card-link" aria-hidden="true">→</span>
@@ -82,7 +82,7 @@
             <a class="work-card" href="work-piano-concert.html">
               <span class="work-photo-frame"><img class="work-photo" src="assets/2022piano.jpg" alt="ピアノコンサート チラシ" width="1080" height="1350" loading="lazy"></span>
               <div class="work-body">
-                <span class="tag">チラシ</span>
+                <span class="tag">イベント</span>
                 <h3>ピアノコンサート チラシ</h3>
                 <p>出演者の写真と緑を基調に、<br>ピアノコンサートのチラシを<br>制作しました。</p>
                 <span class="card-link" aria-hidden="true">→</span>
@@ -100,7 +100,7 @@
             <a class="work-card" href="work-concert-program-2025.html">
               <span class="work-photo-frame"><img class="work-photo" src="assets/2025program.jpg" alt="演奏会プログラム" width="1080" height="1350" loading="lazy"></span>
               <div class="work-body">
-                <span class="tag">その他</span>
+                <span class="tag">グラフィック</span>
                 <h3>演奏会プログラム</h3>
                 <p>演奏会の楽しさが伝わる表紙と、<br>出演者・曲目を読みやすくまとめた<br>プログラムを制作しました。</p>
                 <span class="card-link" aria-hidden="true">→</span>
@@ -116,7 +116,7 @@
           <div class="section-intro">
             <p class="eyebrow">SERVICE</p>
             <h2 id="service-title">できること</h2>
-            <p>Webとデザインで、<br>伝えたい想いがちゃんと届くようにお手伝いします。</p>
+            <p>Webとデザインで、<br>伝えたい想いがちゃんと届くように<br>お手伝いします。</p>
           </div>
           <div class="service-grid">
             <article class="service-card">
@@ -150,6 +150,7 @@
               <p>「何から始めればいい？」<br>「こんなことできる？」など、<br>相談だけでもお気軽にどうぞ。</p>
             </article>
           </div>
+          <button class="pill section-button" data-link="service">詳しく見る <span>→</span></button>
         </div>
       </section>
       <section class="about wrap section-boundary" id="about" aria-labelledby="about-title">
@@ -170,8 +171,12 @@
           <h3 class="small-heading">これまでのこと</h3>
           <dl class="timeline">
             <div>
+              <dt>〜20代前半</dt>
+              <dd>HTMLコーダーとして制作会社に勤務</dd>
+            </div>
+            <div>
               <dt>20代</dt>
-              <dd>デザイン事務所、システム開発の会社でWebデザイナー・HTMLコーダーとして経験を積む</dd>
+              <dd>Webデザイナー（アシスタント）・コーダーとして経験を積む</dd>
             </div>
             <div>
               <dt>出産後</dt>
@@ -179,11 +184,12 @@
             </div>
             <div>
               <dt>これから</dt>
-              <dd>地域の個人事業主さんや団体さんの「伝える」をお手伝いしていきたいです</dd>
+              <dd>地域の個人事業主さんや小さな団体の<br>「伝える」をお手伝いしていきたいです</dd>
             </div>
           </dl>
           <aside>
             <img src="assets/books_pen.png" alt="" loading="lazy">
+            <p class="aside-note">経験を活かして<br>お役に立てることを<br>探しています。</p>
           </aside>
         </div>
         <div class="values">
@@ -227,7 +233,7 @@
               <img src="assets/icon_mail.png" alt="" loading="lazy">
               <h3>フォームから送る</h3>
               <p>2〜3日以内に<br>ご返信いたします。<br>お気軽にご連絡ください。</p>
-              <span class="pill">メールフォーム <span>→</span></span>
+              <span class="pill">お問い合わせフォーム <span>→</span></span>
             </a>
           </div>
         </div>
@@ -244,7 +250,7 @@
           <img class="leaf leaf-two" src="assets/leaf.png" alt="">
         </div>
         <div class="closing closing-invitation">
-          <p class="aside-note">その「ちょっと困った」<br>聞かせてください。</p>
+          <p class="aside-note">その「ちょっと困った」、<br>聞かせてください。</p>
           <img class="closing-mugs" src="assets/conversation-mugs.png" alt="" loading="lazy">
         </div>
       </section>

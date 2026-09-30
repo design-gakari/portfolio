@@ -1,4 +1,5 @@
-// 公開先のURLが決まり次第、空文字を実際のURLに変更してください。
+// SNSは各サービスのトップを仮設定。アカウントURLへ変更するとフッターとメニューに反映されます。
+// その他の空文字も、公開先が決まり次第URLを設定してください。
 const links = {
   works: 'works.html',
   service: '',
@@ -8,9 +9,10 @@ const links = {
   workProgram: 'work-concert-program-2025.html',
   line: '',
   form: '',
-  x: '',
-  instagram: '',
-  litlink: ''
+  x: 'https://x.com/',
+  instagram: 'https://www.instagram.com/',
+  litlink: 'https://lit.link/',
+  foriio: 'https://www.foriio.com/'
 };
 
 // ── 全画面メニューとキーボード操作 ──
