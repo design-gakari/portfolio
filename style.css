@@ -1666,6 +1666,10 @@ main {
   height: 27px;
 }
 
+#navigation a.social-icon{
+  padding: 0;
+}
+
 /* WORKS：カンプに合わせた3枚の葉の配置 */
 
 .works .section-intro>.leaf-one {
