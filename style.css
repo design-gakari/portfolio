@@ -1666,7 +1666,7 @@ main {
   height: 27px;
 }
 
-#navigation a.social-icon{
+#navigation .social-icon{
   padding: 0;
 }
 
