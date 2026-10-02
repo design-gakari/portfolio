@@ -48,7 +48,7 @@
   width: auto;
   margin: 0;
   font-size: clamp(12px, 2.65vw, 19px);
-  transform: rotate(-6deg);
+  transform: rotate(343deg) translate(62px, -17px);
 }
 
 .closing-invitation > .closing-mugs {

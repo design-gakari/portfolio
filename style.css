@@ -224,8 +224,8 @@ h1 {
 }
 
 .hero-leaf {
-  bottom: -4px;
-  left: 35%;
+  top: 34%;
+  right: 5%;
   transform: rotate(-10deg);
 }
 
@@ -462,20 +462,21 @@ h2+p {
 
 .about-intro>.aside-note {
   position: absolute;
-  bottom: 28px;
-  left: 11%;
+  bottom: 374px;
+  left: 50%;
   font-size: .85em;
 }
 
 .about-person {
   position: absolute;
   right: -4%;
-  bottom: -8px;
+  bottom: -45px;
   width: 57%;
 }
 
 .about-intro .leaf-one {
-  left: 55%;
+  left: 42%;
+  top: 72%;
 }
 
 .soft-panel {
@@ -789,8 +790,8 @@ h2+p {
 
 .notice .leaf-two {
   width: 7%;
-  top: 6%;
-  right: 3%;
+  top: 10%;
+  right: 12%;
 }
 
 .closing {
@@ -911,6 +912,7 @@ dialog .pill {
 
   .hero-vase {
     bottom: 6%;
+    left: 17%;
   }
 
   .works {
@@ -1020,13 +1022,14 @@ dialog .pill {
   }
 
   .about-intro {
-    min-height: 233px;
+    min-height: 200px;
   }
 
   .about-intro>.aside-note {
-    font-size: 12px;
-    left: 9%;
-    bottom: 18px;
+    font-size: 9px;
+    left: 65%;
+    bottom: 126px;
+    transform: rotate(5deg);
   }
 
   .bio {
@@ -1088,7 +1091,7 @@ dialog .pill {
 
   .values ul {
     gap: 8px;
-    font-size: 12px;
+    font-size: 10px;
   }
 
   .values li span {
@@ -1126,8 +1129,13 @@ dialog .pill {
     padding: 14px 5px;
   }
 
+  .contact-person{
+    bottom: -4px;
+    width: 49%;
+  }
+
   .contact-intro {
-    min-height: 240px;
+    min-height: 200px;
   }
 
   .contact-intro .aside-note {
@@ -1140,7 +1148,7 @@ dialog .pill {
   }
 
   .questions {
-    padding: 18px 16px;
+    padding: 18px 10px;
   }
 
   .questions ul {
@@ -1185,6 +1193,7 @@ dialog .pill {
   .notice {
     padding: 19px 21px;
     margin-top: 27px;
+    margin-bottom: 20px;
   }
 
   .notice>div {
@@ -1279,7 +1288,7 @@ dialog .pill {
 
   .hero-vase {
     width: 22%;
-    left: 23%;
+    left: 16%;
   }
 
   .hero-coffee {
@@ -1287,7 +1296,8 @@ dialog .pill {
   }
 
   .hero-leaf {
-    left: 38%;
+    right: 0;
+    top: 12%;
   }
 
   .section-intro {
@@ -2137,7 +2147,7 @@ html {
 
 @media(max-width:600px) {
   .questions ul {
-    gap: 15px 16px;
+    gap: 12px 10px;
     padding-inline: 2%;
   }
 

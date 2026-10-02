@@ -1,4 +1,4 @@
-# となりのデザイン係 — 編集ガイド
+# みうら たかよ — 編集ガイド
 
 HTML / CSS / JavaScriptで構成された静的サイトです。生成済みのHTMLはブラウザで直接開けます。GitHub Pagesへの配信時にPythonやnpmは不要です。
 
